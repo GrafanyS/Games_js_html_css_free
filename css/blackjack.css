@@ -1,0 +1,94 @@
+.field {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dealer {
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.player {
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  min-height: 120px;
+}
+
+.card {
+  width: 80px;
+  height: 120px;
+  background-color: var(--card-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  color: #2c3e50;
+}
+
+.card.red {
+  color: var(--red-card);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+}
+
+#deal {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="button"] {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+input[type="button"]:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 60px;
+    height: 90px;
+    font-size: 1.5rem;
+  }
+}

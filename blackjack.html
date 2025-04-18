@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack 21</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blackjack.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">Игровой портал</a></li>
+      <li class="nav-item"><a href="tic-tac-toe.html">Крестики-нолики</a></li>
+      <li class="nav-item"><a href="blackjack.html">Блэкджек 21</a></li>
+      <li class="nav-item"><a href="snake.html">Змейка</a></li>
+    </ul>
+  </nav>
+  
+  <div class="game-container">
+    <h1>Blackjack 21</h1>
+    
+    <div class="field dealer">
+      <h2>ДИЛЕР <span id="dltwentyone" class="score"></span></h2>
+      <div id="dealercards" class="card-container"></div>
+    </div>
+    
+    <div class="field player">
+      <h2>ИГРОК <span id="pltwentyone" class="score"></span></h2>
+      <div id="playercards" class="card-container"></div>
+    </div>
+    
+    <form id="deal">
+      <input id="dealbtn" type="button" value="Раздать карты">
+      <input id="hitbtn" type="button" value="Карту" disabled>
+      <input id="standbtn" type="button" value="Хватит" disabled>
+      <input id="againbtn" type="button" value="Еще раз" disabled>
+    </form>
+    
+    <div id="message" class="message" style="display: none;"></div>
+  </div>
+
+  <script src="js/blackjack.js"></script>
+</body>
+</html>
