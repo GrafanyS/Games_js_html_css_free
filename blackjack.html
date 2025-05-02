@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blackjack 21</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/blackjack.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack 21</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blackjack.css">
 </head>
 <body>
-  <nav class="navbar">
+<nav class="navbar">
     <ul class="nav-list">
-      <li class="nav-item"><a href="index.html">Игровой портал</a></li>
-      <li class="nav-item"><a href="tic-tac-toe.html">Крестики-нолики</a></li>
-      <li class="nav-item"><a href="blackjack.html">Блэкджек 21</a></li>
-      <li class="nav-item"><a href="snake.html">Змейка</a></li>
+        <li class="nav-item"><a href="index.html">Игровой портал</a></li>
+        <li class="nav-item"><a href="tic-tac-toe.html">Крестики-нолики</a></li>
+        <li class="nav-item"><a href="blackjack.html">Блэкджек 21</a></li>
+        <li class="nav-item"><a href="snake.html">Змейка</a></li>
     </ul>
-  </nav>
-  
-  <div class="game-container">
+</nav>
+
+<div class="game-container">
     <h1>Blackjack 21</h1>
-    
+
     <div class="field dealer">
-      <h2>ДИЛЕР <span id="dltwentyone" class="score"></span></h2>
-      <div id="dealercards" class="card-container"></div>
+        <h2>ДИЛЕР <span id="dltwentyone" class="score"></span></h2>
+        <div id="dealercards" class="card-container"></div>
     </div>
-    
+
     <div class="field player">
-      <h2>ИГРОК <span id="pltwentyone" class="score"></span></h2>
-      <div id="playercards" class="card-container"></div>
+        <h2>ИГРОК <span id="pltwentyone" class="score"></span></h2>
+        <div id="playercards" class="card-container"></div>
     </div>
-    
+
     <form id="deal">
-      <input id="dealbtn" type="button" value="Раздать карты">
-      <input id="hitbtn" type="button" value="Карту" disabled>
-      <input id="standbtn" type="button" value="Хватит" disabled>
-      <input id="againbtn" type="button" value="Еще раз" disabled>
+        <input id="dealbtn" type="button" value="Раздать карты">
+        <input id="hitbtn" type="button" value="Карту" disabled>
+        <input id="standbtn" type="button" value="Хватит" disabled>
+        <input id="againbtn" type="button" value="Еще раз" disabled>
     </form>
-    
+
     <div id="message" class="message" style="display: none;"></div>
-  </div>
+</div>
 <footer class="footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Игровой портал</h3>
-      <p>Классические игры для вашего удовольствия</p>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Игровой портал</h3>
+            <p>Классические игры для вашего удовольствия</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Игры</h3>
+            <ul>
+                <li><a href="blackjack.html">Blackjack 21</a></li>
+                <li><a href="tic-tac-toe.html">Крестики-нолики</a></li>
+                <li><a href="snake.html">Змейка</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <ul class="social-links">
+                <li><a href="https://github.com/GrafanyS/Games_js_html_css_free" class="social-icon github"></a></li>
+                <li><a href="https://vk.com" class="social-icon vk"></a></li>
+                <li><a href="https://web.telegram.org" class="social-icon telegram"></a></li>
+            </ul>
+        </div>
     </div>
-    
-    <div class="footer-section">
-      <h3>Игры</h3>
-      <ul>
-        <li><a href="blackjack.html">Blackjack 21</a></li>
-        <li><a href="tic-tac-toe.html">Крестики-нолики</a></li>
-        <li><a href="snake.html">Змейка</a></li>
-      </ul>
+
+    <div class="footer-bottom">
+        <p>&copy;
+            <script>document.write(new Date().getFullYear())</script>
+            Игровой портал. Все права защищены.
+        </p>
     </div>
-    
-    <div class="footer-section">
-      <h3>Контакты</h3>
-      <ul class="social-links">
-        <li><a href="https://github.com/GrafanyS/Games_js_html_css_free" class="social-icon github"></a></li>
-        <li><a href="https://vk.com" class="social-icon vk"></a></li>
-        <li><a href="https://web.telegram.org" class="social-icon telegram"></a></li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>&copy; <script>document.write(new Date().getFullYear())</script> Игровой портал. Все права защищены.</p>
-  </div>
 </footer>
 
-  <script src="js/blackjack.js"></script>
+<script src="js/blackjack.js"></script>
 </body>
 </html>
