@@ -13,10 +13,10 @@ document.querySelectorAll('.social-icon').forEach(icon => {
         window.open('https://github.com/GrafanyS/Games_js_html_css_free', '_blank');
         break;
       case 'vk':
-        window.open('https://vk.com/ваш-профиль', '_blank');
+        window.open('https://vk.com', '_blank');
         break;
       case 'telegram':
-        window.open('https://t.me/ваш-ник', '_blank');
+        window.open('https://web.telegram.org', '_blank');
         break;
     }
   });
