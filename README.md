@@ -28,7 +28,7 @@
 ## Установка
 
 1. Клонируйте репозиторий:
-   ```bash
+
+```bash
    https://github.com/GrafanyS/Games_js_html_css_free.git
-   ```
-   
+```
