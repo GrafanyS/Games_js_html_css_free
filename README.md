@@ -29,4 +29,6 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-username/игровой-портал.git
+   https://github.com/GrafanyS/Games_js_html_css_free.git
+   ```
+   
